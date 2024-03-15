@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8536abcc-5a46-4e68-b296-c4c5411ee870",
+		"name": "NotasDeCompra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login\": \"usuario01\",\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5184/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5184",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aprovacoes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c3VhcmlvMDEiLCJuYmYiOjE2OTMzNTQ3ODEsImV4cCI6MTY5MzM1NTM4MSwiaWF0IjoxNjkzMzU0NzgxfQ.h1q1IbaCJ4ujF_HFoU0KdOl7YVVx1GtCbtQAsfEwttY",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5184/notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5184",
+					"path": [
+						"notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aprovar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
